@@ -1,29 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Happy Birthday Shree 🎂</title>
-  <style>
-    body {
-      background-color: #fce4ec;
-      font-family: 'Helvetica Neue', sans-serif;
-      text-align: center;
-      padding: 50px;
-      color: #333;
-    }
-    h1 {
-      font-size: 3em;
-    }
-    p {
-      font-size: 1.3em;
-      max-width: 600px;
-      margin: 20px auto;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Welcome to ShreeVerse – A magical 19th birthday universe for Shree." />
+  <meta property="og:title" content="Happy 19th Birthday Shree - ShreeVerse" />
+  <meta property="og:image" content="/assets/images/shreeverse-thumbnail.png" />
+  <title>ShreeVerse - Happy 19th Birthday Shree</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <h1>Happy Birthday, Shree! 🎉</h1>
-  <p>This is a little digital surprise from me to you.<br>
-  You mean more than words can say. 💫<br>
-  Wishing you smiles, magic, and memories forever. 🩷</p>
+  <!-- 🎬 Landing Animation -->
+  <div id="landing">
+    <div class="stars"></div>
+    <h1 class="typing">Happy 19th Birthday, Shree 🌟</h1>
+    <button id="enterButton">Enter ShreeVerse</button>
+  </div>
+
+  <!-- 🪐 Home Page: ShreeVerse Planets -->
+  <main id="home" class="hidden">
+    <h2>Welcome to <span>ShreeVerse</span></h2>
+    <div id="planet-container">
+      <!-- Example Planets -->
+      <div class="planet" data-tooltip="Her Smile"></div>
+      <div class="planet" data-tooltip="Her Laugh"></div>
+      <div class="planet" data-tooltip="Her Kindness"></div>
+      <!-- Repeat up to 19 planets with links -->
+    </div>
+  </main>
+
+  <!-- 📖 About Shree Timeline -->
+  <section id="timeline" class="hidden">
+    <h2>Shree's Journey</h2>
+    <div class="timeline-container">
+      <!-- Year-wise scrollable milestones -->
+      <div class="year-block">2005 – Born under the stars ✨</div>
+      <div class="year-block">2012 – Learns her favorite poem 🌸</div>
+      <div class="year-block">2024 – Starts her DU life 🚀</div>
+    </div>
+  </section>
+
+  <!-- 🌸 Emotional Message Wall -->
+  <section id="message-wall" class="hidden">
+    <h2>Dear Shree...</h2>
+    <p class="scroll-text">In every mood, every silence, every burst of laughter — you're magic in human form. You are not just turning 19, you're turning unforgettable. 💫</p>
+  </section>
+
+  <!-- 🎁 Interactive Gift Box -->
+  <section id="gift-box" class="hidden">
+    <div class="gift" onclick="openGift()">
+      <img src="assets/svg/gift.svg" alt="Gift Box" />
+      <div class="poem hidden">"You’re the poem I didn’t know I was writing until the stars spelled your name."</div>
+    </div>
+  </section>
+
+  <!-- 🔐 Secret Diary -->
+  <section id="secret-diary" class="hidden">
+    <h2>Enter Secret Diary</h2>
+    <input type="password" id="diary-pass" placeholder="Password..." />
+    <button onclick="unlockDiary()">Unlock</button>
+    <div id="diary-content" class="hidden">
+      <p>Here lies the unspoken — your future letter, untold poem, and softest tears. 🌙</p>
+    </div>
+  </section>
+
+  <!-- 💬 ShreeAI Chatbot -->
+  <div id="shreeAI" class="chatbot hidden">
+    <div class="chat-header">ShreeAI</div>
+    <div class="chat-body" id="chatBody"></div>
+    <input type="text" id="chatInput" placeholder="How are you feeling today?" />
+  </div>
+
+  <!-- 🎨 Poetry & Gallery Carousel -->
+  <section id="poetry-gallery" class="hidden">
+    <h2>Shree in Words & Colors</h2>
+    <div class="carousel">
+      <div class="poem">"She walks like a daydream, speaks like a song."</div>
+      <div class="poem">"If stars wrote letters, they’d sign your name."</div>
+      <!-- Add image carousel here -->
+    </div>
+  </section>
+
+  <!-- 🌈 Mood Jar -->
+  <section id="mood-jar" class="hidden">
+    <h2>Mood Jar</h2>
+    <div class="moods">
+      <button onclick="showMood('happy')">Happy</button>
+      <button onclick="showMood('sad')">Sad</button>
+      <button onclick="showMood('angry')">Angry</button>
+      <button onclick="showMood('lost')">Lost</button>
+    </div>
+    <div id="mood-response"></div>
+  </section>
+
+  <!-- 🌍 Dream Map -->
+  <section id="dream-map" class="hidden">
+    <h2>Dream Map</h2>
+    <div id="map-container">
+      <!-- Clickable fantasy city pins like Paris, Tokyo, etc. -->
+    </div>
+  </section>
+
+  <!-- 🎆 Countdown & Fireworks -->
+  <section id="countdown" class="hidden">
+    <h2>Countdown to 24 June, 12:00AM</h2>
+    <div id="timer"></div>
+    <canvas id="fireworks"></canvas>
+  </section>
+
+  <!-- 🎶 Music Player -->
+  <div id="music-player" class="hidden">
+    <audio id="bg-music" controls loop>
+      <source src="assets/audio/birthday-theme.mp3" type="audio/mpeg" />
+    </audio>
+  </div>
 </body>
 </html>
