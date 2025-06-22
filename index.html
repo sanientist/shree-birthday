@@ -1,119 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Welcome to ShreeVerse – A magical 19th birthday universe for Shree." />
-  <meta property="og:title" content="Happy 19th Birthday Shree - ShreeVerse" />
-  <meta property="og:image" content="/assets/images/shreeverse-thumbnail.png" />
-  <title>ShreeVerse - Happy 19th Birthday Shree</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Shree 🎂</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- 🎬 Landing Animation -->
-  <div id="landing">
-    <div class="stars"></div>
-    <h1 class="typing">Happy 19th Birthday, Shree 🌟</h1>
-    <button id="enterButton">Enter ShreeVerse</button>
-  </div>
+    <section class="intro">
+        <h1>Happy Birthday, Shree! 🩷</h1>
+        <p>This site is made just for you – for the laughs, memories, and love we’ve shared under the stars and beyond.</p>
+    </section>
 
-  <!-- 🪐 Home Page: ShreeVerse Planets -->
-  <main id="home" class="hidden">
-    <h2>Welcome to <span>ShreeVerse</span></h2>
-    <div id="planet-container">
-      <!-- Example Planets -->
-      <div class="planet" data-tooltip="Her Smile"></div>
-      <div class="planet" data-tooltip="Her Laugh"></div>
-      <div class="planet" data-tooltip="Her Kindness"></div>
-      <!-- Repeat up to 19 planets with links -->
-    </div>
-  </main>
+    <section class="gallery">
+        <h2>Our Moments 📸</h2>
+        <div class="images">
+            <img src="images/photo1.png" alt="Google Meet Moment">
+            <img src="images/photo2.png" alt="Beach Under the Moon">
+            <img src="images/photo3.png" alt="Cherry Blossom Walk">
+            <img src="images/photo4.png" alt="Sunset by the Sea">
+        </div>
+    </section>
 
-  <!-- 📖 About Shree Timeline -->
-  <section id="timeline" class="hidden">
-    <h2>Shree's Journey</h2>
-    <div class="timeline-container">
-      <!-- Year-wise scrollable milestones -->
-      <div class="year-block">2005 – Born under the stars ✨</div>
-      <div class="year-block">2012 – Learns her favorite poem 🌸</div>
-      <div class="year-block">2024 – Starts her DU life 🚀</div>
-    </div>
-  </section>
+    <section class="poems">
+        <h2>From My Heart 💌</h2>
+        <div class="poem">
+            <h3>Hold My Hand</h3>
+            <p>
+                Hold my hand,<br>
+                not just for now,<br>
+                but until time forgets our names<br>
+                and the stars no longer shine.<br><br>
 
-  <!-- 🌸 Emotional Message Wall -->
-  <section id="message-wall" class="hidden">
-    <h2>Dear Shree...</h2>
-    <p class="scroll-text">In every mood, every silence, every burst of laughter — you're magic in human form. You are not just turning 19, you're turning unforgettable. 💫</p>
-  </section>
+                Hold it through storms,<br>
+                through silence,<br>
+                through the soft fading of our days.<br><br>
 
-  <!-- 🎁 Interactive Gift Box -->
-  <section id="gift-box" class="hidden">
-    <div class="gift" onclick="openGift()">
-      <img src="assets/svg/gift.svg" alt="Gift Box" />
-      <div class="poem hidden">"You’re the poem I didn’t know I was writing until the stars spelled your name."</div>
-    </div>
-  </section>
+                And when the fire of life dims,<br>
+                when we turn to ashes,<br>
+                let our hands still speak<br>
+                what words could never hold,<br>
+                forever.
+            </p>
+        </div>
+        <div class="poem">
+            <h3>Ten Years From Now</h3>
+            <p>
+                Ten years from now,<br>
+                I want to see myself loving the same person I love today,<br>
+                with the same smile,<br>
+                the same spark that started it all.<br><br>
 
-  <!-- 🔐 Secret Diary -->
-  <section id="secret-diary" class="hidden">
-    <h2>Enter Secret Diary</h2>
-    <input type="password" id="diary-pass" placeholder="Password..." />
-    <button onclick="unlockDiary()">Unlock</button>
-    <div id="diary-content" class="hidden">
-      <p>Here lies the unspoken — your future letter, untold poem, and softest tears. 🌙</p>
-    </div>
-  </section>
+                I dream of mornings with the same soul,<br>
+                coffee in hand, hearts at ease,<br>
+                you beside me then, now, and always.<br><br>
 
-  <!-- 💬 ShreeAI Chatbot -->
-  <div id="shreeAI" class="chatbot hidden">
-    <div class="chat-header">ShreeAI</div>
-    <div class="chat-body" id="chatBody"></div>
-    <input type="text" id="chatInput" placeholder="How are you feeling today?" />
-  </div>
+                Not because it’s easy,<br>
+                but because it’s you.<br>
+                And loving you…<br>
+                was never just a phase.<br><br>
 
-  <!-- 🎨 Poetry & Gallery Carousel -->
-  <section id="poetry-gallery" class="hidden">
-    <h2>Shree in Words & Colors</h2>
-    <div class="carousel">
-      <div class="poem">"She walks like a daydream, speaks like a song."</div>
-      <div class="poem">"If stars wrote letters, they’d sign your name."</div>
-      <!-- Add image carousel here -->
-    </div>
-  </section>
+                And if the universe allows,<br>
+                I hope it's still you,<br>
+                the one my heart knew<br>
+                before time ever asked it to decide.
+            </p>
+        </div>
+    </section>
 
-  <!-- 🌈 Mood Jar -->
-  <section id="mood-jar" class="hidden">
-    <h2>Mood Jar</h2>
-    <div class="moods">
-      <button onclick="showMood('happy')">Happy</button>
-      <button onclick="showMood('sad')">Sad</button>
-      <button onclick="showMood('angry')">Angry</button>
-      <button onclick="showMood('lost')">Lost</button>
-    </div>
-    <div id="mood-response"></div>
-  </section>
+    <section class="outro">
+        <h2>Forever Starts Here 🌙</h2>
+        <p>Let’s hold hands across galaxies. You’ll always be my moon.</p>
+    </section>
 
-  <!-- 🌍 Dream Map -->
-  <section id="dream-map" class="hidden">
-    <h2>Dream Map</h2>
-    <div id="map-container">
-      <!-- Clickable fantasy city pins like Paris, Tokyo, etc. -->
-    </div>
-  </section>
+    <footer>
+        <p>With love, forever yours 💗</p>
+    </footer>
 
-  <!-- 🎆 Countdown & Fireworks -->
-  <section id="countdown" class="hidden">
-    <h2>Countdown to 24 June, 12:00AM</h2>
-    <div id="timer"></div>
-    <canvas id="fireworks"></canvas>
-  </section>
-
-  <!-- 🎶 Music Player -->
-  <div id="music-player" class="hidden">
-    <audio id="bg-music" controls loop>
-      <source src="assets/audio/birthday-theme.mp3" type="audio/mpeg" />
+    <audio autoplay loop>
+        <source src="music/perfect.mp3" type="audio/mp3">
     </audio>
-  </div>
 </body>
 </html>

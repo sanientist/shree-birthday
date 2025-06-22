@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #fce4ec, #e0c3fc);
+    color: #333;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: #8e44ad;
+}
+
+.intro, .gallery, .poems, .outro {
+    padding: 40px 20px;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.images img {
+    width: 300px;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.poem {
+    background: #ffffffbb;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 600px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+footer {
+    padding: 20px;
+    font-size: 1em;
+    background-color: #fff0f5;
+}
