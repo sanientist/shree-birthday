@@ -1,84 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday, Shree 🎂</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Shreeverse ✨</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="loader">
+    <p>Opening The Shreeverse...</p>
+  </div>
+
+  <audio autoplay loop id="bg-music">
+    <source src="assets/audio/perfect.mp3" type="audio/mp3" />
+  </audio>
+
+  <div class="container hidden">
     <section class="intro">
-        <h1>Happy Birthday, Shree! 🩷</h1>
-        <p>This site is made just for you – for the laughs, memories, and love we’ve shared under the stars and beyond.</p>
+      <h1>Welcome to The Shreeverse</h1>
+      <p>A world where emotions glow brighter than stars. Let’s begin our journey…</p>
+      <button onclick="startJourney()">Enter</button>
     </section>
 
-    <section class="gallery">
-        <h2>Our Moments 📸</h2>
-        <div class="images">
-            <img src="images/photo1.png" alt="Google Meet Moment">
-            <img src="images/photo2.png" alt="Beach Under the Moon">
-            <img src="images/photo3.png" alt="Cherry Blossom Walk">
-            <img src="images/photo4.png" alt="Sunset by the Sea">
-        </div>
+    <section class="scene" id="scene1">
+      <h2>The First Memory 🌸</h2>
+      <p>Remember when we first really talked? Not just with words—but when our souls whispered...</p>
+      <img src="assets/images/photo1.png" alt="First Memory">
     </section>
 
-    <section class="poems">
-        <h2>From My Heart 💌</h2>
-        <div class="poem">
-            <h3>Hold My Hand</h3>
-            <p>
-                Hold my hand,<br>
-                not just for now,<br>
-                but until time forgets our names<br>
-                and the stars no longer shine.<br><br>
-
-                Hold it through storms,<br>
-                through silence,<br>
-                through the soft fading of our days.<br><br>
-
-                And when the fire of life dims,<br>
-                when we turn to ashes,<br>
-                let our hands still speak<br>
-                what words could never hold,<br>
-                forever.
-            </p>
-        </div>
-        <div class="poem">
-            <h3>Ten Years From Now</h3>
-            <p>
-                Ten years from now,<br>
-                I want to see myself loving the same person I love today,<br>
-                with the same smile,<br>
-                the same spark that started it all.<br><br>
-
-                I dream of mornings with the same soul,<br>
-                coffee in hand, hearts at ease,<br>
-                you beside me then, now, and always.<br><br>
-
-                Not because it’s easy,<br>
-                but because it’s you.<br>
-                And loving you…<br>
-                was never just a phase.<br><br>
-
-                And if the universe allows,<br>
-                I hope it's still you,<br>
-                the one my heart knew<br>
-                before time ever asked it to decide.
-            </p>
-        </div>
+    <section class="scene" id="scene2">
+      <h2>Our Digital Nights 💻🌙</h2>
+      <p>Even miles away, you were the closest. Smiles on screens, hearts synced.</p>
+      <img src="assets/images/photo2.png" alt="Google Meet">
     </section>
 
-    <section class="outro">
-        <h2>Forever Starts Here 🌙</h2>
-        <p>Let’s hold hands across galaxies. You’ll always be my moon.</p>
+    <section class="scene poem">
+      <h2>Poem: Hold My Hand 🤝</h2>
+      <p>
+        Hold my hand,<br>
+        not just for now,<br>
+        but until time forgets our names<br>
+        and the stars no longer shine.<br><br>
+
+        Hold it through storms,<br>
+        through silence,<br>
+        through the soft fading of our days.<br><br>
+
+        And when the fire of life dims,<br>
+        when we turn to ashes,<br>
+        let our hands still speak<br>
+        what words could never hold,<br>
+        forever.
+      </p>
     </section>
 
-    <footer>
-        <p>With love, forever yours 💗</p>
-    </footer>
+    <section class="scene" id="scene3">
+      <h2>Beachside Dreams 🌊🌕</h2>
+      <p>Under the full moon, even silence felt like poetry.</p>
+      <img src="assets/images/photo3.png" alt="Beach under moon">
+    </section>
 
-    <audio autoplay loop>
-        <source src="music/perfect.mp3" type="audio/mp3">
-    </audio>
+    <section class="scene poem">
+      <h2>Poem: Ten Years From Now 💌</h2>
+      <p>
+        Ten years from now,<br>
+        I want to see myself loving the same person I love today,<br>
+        with the same smile,<br>
+        the same spark that started it all.<br><br>
+
+        I dream of mornings with the same soul,<br>
+        coffee in hand, hearts at ease,<br>
+        you beside me then, now, and always.<br><br>
+
+        Not because it’s easy,<br>
+        but because it’s you.<br>
+        And loving you…<br>
+        was never just a phase.<br><br>
+
+        And if the universe allows,<br>
+        I hope it's still you,<br>
+        the one my heart knew<br>
+        before time ever asked it to decide.
+      </p>
+    </section>
+
+    <section class="scene" id="final-scene">
+      <h2>The Final Portal 💫</h2>
+      <p>One day, after all storms pass… we’ll find each other again. Better. Whole. Eternal.</p>
+      <p class="signature">— Yours, forever</p>
+    </section>
+  </div>
+
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
