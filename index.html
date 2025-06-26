@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Happy Birthday, Shree 🎂</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html, body {
+        width: 100%;
+        height: 100%;
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(to bottom, #fff5f7, #fde2ff);
+        overflow-x: hidden;
+      }
+      .container {
+        text-align: center;
+        padding: 40px 20px;
+        animation: fadeIn 2s ease-in-out;
+      }
+      h1 {
+        font-family: 'Pacifico', cursive;
+        font-size: 3em;
+        color: #ff69b4;
+        margin-bottom: 10px;
+      }
+      h2 {
+        color: #a02973;
+        font-size: 1.4em;
+        margin-bottom: 30px;
+      }
+      .section {
+        margin: 60px 0;
+        animation: fadeInUp 1s ease forwards;
+      }
+      .section img {
+        width: 90%;
+        max-width: 400px;
+        border-radius: 20px;
+        margin: 20px 0;
+        box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+      }
+      .section p {
+        font-size: 1.2em;
+        color: #5c3256;
+        padding: 0 20px;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      .poem {
+        font-style: italic;
+        white-space: pre-line;
+        margin-top: 30px;
+      }
+      audio {
+        display: none;
+      }
+      .final {
+        font-family: 'Pacifico', cursive;
+        font-size: 2em;
+        color: #ff4081;
+        margin-top: 50px;
+      }
+      @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+      @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(40px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    </style>
+  </head>
+  <body>
+    <audio autoplay loop>
+      <source src="assets/audio/perfect.mp3" type="audio/mp3" />
+    </audio>
+
+    <div class="container">
+      <h1>Happy Birthday, Shree 🎉</h1>
+      <h2>A digital hug wrapped in stars, poems & love.</h2>
+
+      <div class="section">
+        <img src="assets/images/photo1.png" alt="Memory 1" />
+        <p>You smiled. I smiled. And the universe paused to watch.</p>
+      </div>
+
+      <div class="section">
+        <img src="assets/images/photo2.png" alt="Memory 2" />
+        <p>Through headphones and pixels, your laugh became my favorite sound.</p>
+      </div>
+
+      <div class="section">
+        <img src="assets/images/photo3.png" alt="Memory 3" />
+        <p>We dreamt under the same moon, even when miles apart.</p>
+      </div>
+
+      <div class="section poem">
+        <p>
+Hold my hand, not just for now,<br>
+but until time forgets our names<br>
+and the stars no longer shine.<br><br>
+Hold it through storms, through silence,<br>
+through the soft fading of our days.<br><br>
+And when the fire of life dims,<br>
+let our hands still speak<br>
+what words could never hold.
+        </p>
+      </div>
+
+      <div class="section poem">
+        <p>
+Ten years from now,<br>
+I want to see myself loving the same person<br>
+with the same spark, the same softness.<br><br>
+Not because it’s easy, but because it’s you.<br>
+And loving you... was never just a phase.
+        </p>
+      </div>
+
+      <div class="final">Forever, your biggest fan 💗</div>
+    </div>
+  </body>
+</html>
